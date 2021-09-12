@@ -10,15 +10,15 @@
           "CredentialsProvider": {
             "CognitoIdentity": {
               "Default": {
-                "PoolId": "ap-northeast-1:be1c6d88-9137-49a4-8b44-5a674df5cddb",
+                "PoolId": "${IDENTITY_POOL_ID}",
                 "Region": "ap-northeast-1"
               }
             }
           },
           "CognitoUserPool": {
             "Default": {
-              "PoolId": "ap-northeast-1_N6YkRZaVR",
-              "AppClientId": "uosjc4n01l1vid5rbu07tpljo",
+              "PoolId": "${USER_POOL_ID}",
+              "AppClientId": "${APP_CLIENT_ID}",
               "Region": "ap-northeast-1"
             }
           },
@@ -26,8 +26,8 @@
               "Default": {
                   "authenticationFlowType": "USER_PASSWORD_AUTH",
                   "OAuth": {
-                      "WebDomain": "dev-orion.auth.ap-northeast-1.amazoncognito.com",
-                      "AppClientId": "6fk6chg6v8po4022vi1bpt7js1"
+                      "WebDomain": "${WEB_DOMAIN}",
+                      "AppClientId": "${APP_CLIENT_ID}"
                   }
               }
           }

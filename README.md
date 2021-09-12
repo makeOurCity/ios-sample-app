@@ -1,4 +1,11 @@
 # AmplifyAuthSample
 
+# Getting Started
 
-- https://docs.amplify.aws/lib/auth/getting-started/q/platform/ios
+### 1. Install amplify-ios
+
+https://github.com/aws-amplify/amplify-ios#installation
+
+### 2. Edit amplifyconfiguration.json
+
+read docs
