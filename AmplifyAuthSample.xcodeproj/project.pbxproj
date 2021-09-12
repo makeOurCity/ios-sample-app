@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4136605626EC4518006025AA /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4136605526EC4518006025AA /* ApiClient.swift */; };
+		41FE4ABD26EB135200F9E184 /* AmplifyAuthSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE4ABC26EB135200F9E184 /* AmplifyAuthSample.swift */; };
+		41FE4ABF26EB135200F9E184 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE4ABE26EB135200F9E184 /* ContentView.swift */; };
+		41FE4AC126EB135300F9E184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FE4AC026EB135300F9E184 /* Assets.xcassets */; };
+		41FE4AC426EB135300F9E184 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41FE4AC326EB135300F9E184 /* Preview Assets.xcassets */; };
+		41FE4ACF26EB135300F9E184 /* AmplifyAuthSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE4ACE26EB135300F9E184 /* AmplifyAuthSampleTests.swift */; };
+		41FE4ADA26EB135300F9E184 /* AmplifyAuthSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE4AD926EB135300F9E184 /* AmplifyAuthSampleUITests.swift */; };
+		41FE4AF126EB187F00F9E184 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 41FE4AF026EB187F00F9E184 /* amplifyconfiguration.json */; };
+		41FE4AF426EB239F00F9E184 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 41FE4AF326EB239F00F9E184 /* Amplify */; };
+		41FE4AF626EB239F00F9E184 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 41FE4AF526EB239F00F9E184 /* AWSAPIPlugin */; };
+		41FE4AF826EB239F00F9E184 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 41FE4AF726EB239F00F9E184 /* AWSCognitoAuthPlugin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41FE4ACB26EB135300F9E184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41FE4AB126EB135200F9E184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FE4AB826EB135200F9E184;
+			remoteInfo = AmplifyAuthSample;
+		};
+		41FE4AD626EB135300F9E184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41FE4AB126EB135200F9E184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FE4AB826EB135200F9E184;
+			remoteInfo = AmplifyAuthSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4136605526EC4518006025AA /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		41FE4AB926EB135200F9E184 /* AmplifyAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmplifyAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FE4ABC26EB135200F9E184 /* AmplifyAuthSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAuthSample.swift; sourceTree = "<group>"; };
+		41FE4ABE26EB135200F9E184 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41FE4AC026EB135300F9E184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41FE4AC326EB135300F9E184 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41FE4AC526EB135300F9E184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FE4ACA26EB135300F9E184 /* AmplifyAuthSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmplifyAuthSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FE4ACE26EB135300F9E184 /* AmplifyAuthSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAuthSampleTests.swift; sourceTree = "<group>"; };
+		41FE4AD026EB135300F9E184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FE4AD526EB135300F9E184 /* AmplifyAuthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmplifyAuthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FE4AD926EB135300F9E184 /* AmplifyAuthSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAuthSampleUITests.swift; sourceTree = "<group>"; };
+		41FE4ADB26EB135300F9E184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FE4AF026EB187F00F9E184 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41FE4AB626EB135200F9E184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FE4AF626EB239F00F9E184 /* AWSAPIPlugin in Frameworks */,
+				41FE4AF426EB239F00F9E184 /* Amplify in Frameworks */,
+				41FE4AF826EB239F00F9E184 /* AWSCognitoAuthPlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FE4AC726EB135300F9E184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FE4AD226EB135300F9E184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41FE4AB026EB135200F9E184 = {
+			isa = PBXGroup;
+			children = (
+				41FE4ABB26EB135200F9E184 /* AmplifyAuthSample */,
+				41FE4ACD26EB135300F9E184 /* AmplifyAuthSampleTests */,
+				41FE4AD826EB135300F9E184 /* AmplifyAuthSampleUITests */,
+				41FE4ABA26EB135200F9E184 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41FE4ABA26EB135200F9E184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41FE4AB926EB135200F9E184 /* AmplifyAuthSample.app */,
+				41FE4ACA26EB135300F9E184 /* AmplifyAuthSampleTests.xctest */,
+				41FE4AD526EB135300F9E184 /* AmplifyAuthSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41FE4ABB26EB135200F9E184 /* AmplifyAuthSample */ = {
+			isa = PBXGroup;
+			children = (
+				41FE4AF026EB187F00F9E184 /* amplifyconfiguration.json */,
+				41FE4ABC26EB135200F9E184 /* AmplifyAuthSample.swift */,
+				41FE4ABE26EB135200F9E184 /* ContentView.swift */,
+				41FE4AC026EB135300F9E184 /* Assets.xcassets */,
+				41FE4AC526EB135300F9E184 /* Info.plist */,
+				41FE4AC226EB135300F9E184 /* Preview Content */,
+				4136605526EC4518006025AA /* ApiClient.swift */,
+			);
+			path = AmplifyAuthSample;
+			sourceTree = "<group>";
+		};
+		41FE4AC226EB135300F9E184 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				41FE4AC326EB135300F9E184 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41FE4ACD26EB135300F9E184 /* AmplifyAuthSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				41FE4ACE26EB135300F9E184 /* AmplifyAuthSampleTests.swift */,
+				41FE4AD026EB135300F9E184 /* Info.plist */,
+			);
+			path = AmplifyAuthSampleTests;
+			sourceTree = "<group>";
+		};
+		41FE4AD826EB135300F9E184 /* AmplifyAuthSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41FE4AD926EB135300F9E184 /* AmplifyAuthSampleUITests.swift */,
+				41FE4ADB26EB135300F9E184 /* Info.plist */,
+			);
+			path = AmplifyAuthSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41FE4AB826EB135200F9E184 /* AmplifyAuthSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41FE4ADE26EB135300F9E184 /* Build configuration list for PBXNativeTarget "AmplifyAuthSample" */;
+			buildPhases = (
+				41FE4AB526EB135200F9E184 /* Sources */,
+				41FE4AB626EB135200F9E184 /* Frameworks */,
+				41FE4AB726EB135200F9E184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmplifyAuthSample;
+			packageProductDependencies = (
+				41FE4AF326EB239F00F9E184 /* Amplify */,
+				41FE4AF526EB239F00F9E184 /* AWSAPIPlugin */,
+				41FE4AF726EB239F00F9E184 /* AWSCognitoAuthPlugin */,
+			);
+			productName = AmplifyAuthSample;
+			productReference = 41FE4AB926EB135200F9E184 /* AmplifyAuthSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41FE4AC926EB135300F9E184 /* AmplifyAuthSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41FE4AE126EB135300F9E184 /* Build configuration list for PBXNativeTarget "AmplifyAuthSampleTests" */;
+			buildPhases = (
+				41FE4AC626EB135300F9E184 /* Sources */,
+				41FE4AC726EB135300F9E184 /* Frameworks */,
+				41FE4AC826EB135300F9E184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41FE4ACC26EB135300F9E184 /* PBXTargetDependency */,
+			);
+			name = AmplifyAuthSampleTests;
+			productName = AmplifyAuthSampleTests;
+			productReference = 41FE4ACA26EB135300F9E184 /* AmplifyAuthSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41FE4AD426EB135300F9E184 /* AmplifyAuthSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41FE4AE426EB135300F9E184 /* Build configuration list for PBXNativeTarget "AmplifyAuthSampleUITests" */;
+			buildPhases = (
+				41FE4AD126EB135300F9E184 /* Sources */,
+				41FE4AD226EB135300F9E184 /* Frameworks */,
+				41FE4AD326EB135300F9E184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41FE4AD726EB135300F9E184 /* PBXTargetDependency */,
+			);
+			name = AmplifyAuthSampleUITests;
+			productName = AmplifyAuthSampleUITests;
+			productReference = 41FE4AD526EB135300F9E184 /* AmplifyAuthSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41FE4AB126EB135200F9E184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					41FE4AB826EB135200F9E184 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					41FE4AC926EB135300F9E184 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 41FE4AB826EB135200F9E184;
+					};
+					41FE4AD426EB135300F9E184 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 41FE4AB826EB135200F9E184;
+					};
+				};
+			};
+			buildConfigurationList = 41FE4AB426EB135200F9E184 /* Build configuration list for PBXProject "AmplifyAuthSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41FE4AB026EB135200F9E184;
+			packageReferences = (
+				41FE4AF226EB239F00F9E184 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
+			productRefGroup = 41FE4ABA26EB135200F9E184 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41FE4AB826EB135200F9E184 /* AmplifyAuthSample */,
+				41FE4AC926EB135300F9E184 /* AmplifyAuthSampleTests */,
+				41FE4AD426EB135300F9E184 /* AmplifyAuthSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41FE4AB726EB135200F9E184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FE4AC426EB135300F9E184 /* Preview Assets.xcassets in Resources */,
+				41FE4AF126EB187F00F9E184 /* amplifyconfiguration.json in Resources */,
+				41FE4AC126EB135300F9E184 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FE4AC826EB135300F9E184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FE4AD326EB135300F9E184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41FE4AB526EB135200F9E184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FE4ABF26EB135200F9E184 /* ContentView.swift in Sources */,
+				4136605626EC4518006025AA /* ApiClient.swift in Sources */,
+				41FE4ABD26EB135200F9E184 /* AmplifyAuthSample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FE4AC626EB135300F9E184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FE4ACF26EB135300F9E184 /* AmplifyAuthSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41FE4AD126EB135300F9E184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FE4ADA26EB135300F9E184 /* AmplifyAuthSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41FE4ACC26EB135300F9E184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41FE4AB826EB135200F9E184 /* AmplifyAuthSample */;
+			targetProxy = 41FE4ACB26EB135300F9E184 /* PBXContainerItemProxy */;
+		};
+		41FE4AD726EB135300F9E184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41FE4AB826EB135200F9E184 /* AmplifyAuthSample */;
+			targetProxy = 41FE4AD626EB135300F9E184 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41FE4ADC26EB135300F9E184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41FE4ADD26EB135300F9E184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41FE4ADF26EB135300F9E184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AmplifyAuthSample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AmplifyAuthSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.code4japan.AmplifyAuthSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41FE4AE026EB135300F9E184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AmplifyAuthSample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AmplifyAuthSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.code4japan.AmplifyAuthSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41FE4AE226EB135300F9E184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmplifyAuthSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.code4japan.AmplifyAuthSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmplifyAuthSample.app/AmplifyAuthSample";
+			};
+			name = Debug;
+		};
+		41FE4AE326EB135300F9E184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmplifyAuthSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.code4japan.AmplifyAuthSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmplifyAuthSample.app/AmplifyAuthSample";
+			};
+			name = Release;
+		};
+		41FE4AE526EB135300F9E184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmplifyAuthSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.code4japan.AmplifyAuthSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmplifyAuthSample;
+			};
+			name = Debug;
+		};
+		41FE4AE626EB135300F9E184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmplifyAuthSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.code4japan.AmplifyAuthSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmplifyAuthSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41FE4AB426EB135200F9E184 /* Build configuration list for PBXProject "AmplifyAuthSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE4ADC26EB135300F9E184 /* Debug */,
+				41FE4ADD26EB135300F9E184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41FE4ADE26EB135300F9E184 /* Build configuration list for PBXNativeTarget "AmplifyAuthSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE4ADF26EB135300F9E184 /* Debug */,
+				41FE4AE026EB135300F9E184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41FE4AE126EB135300F9E184 /* Build configuration list for PBXNativeTarget "AmplifyAuthSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE4AE226EB135300F9E184 /* Debug */,
+				41FE4AE326EB135300F9E184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41FE4AE426EB135300F9E184 /* Build configuration list for PBXNativeTarget "AmplifyAuthSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FE4AE526EB135300F9E184 /* Debug */,
+				41FE4AE626EB135300F9E184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41FE4AF226EB239F00F9E184 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41FE4AF326EB239F00F9E184 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41FE4AF226EB239F00F9E184 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		41FE4AF526EB239F00F9E184 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41FE4AF226EB239F00F9E184 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		41FE4AF726EB239F00F9E184 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41FE4AF226EB239F00F9E184 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 41FE4AB126EB135200F9E184 /* Project object */;
+}
