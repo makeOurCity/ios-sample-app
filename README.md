@@ -6,6 +6,11 @@
 
 https://github.com/aws-amplify/amplify-ios#installation
 
+Please check and install libraries below.
+- Amplify
+- AWSAPIPlugin
+- AWSCognitoAuthPlugin
+
 ### 2. Edit amplifyconfiguration.json
 
-read docs
+Edit ${FOO_VAR} placeholders.
