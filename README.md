@@ -4,9 +4,10 @@
 
 ### 1. Install amplify-ios
 
+
+以下のドキュメントを参考に、amplify-iosを導入し、リストにあるライブラリを選択し、インストールしてください。
 https://github.com/aws-amplify/amplify-ios#installation
 
-Please check and install libraries below.
 - Amplify
 - AWSAPIPlugin
 - AWSCognitoAuthPlugin
@@ -14,18 +15,22 @@ Please check and install libraries below.
 
 ### 2. Setup Amplify
 
+以下のドキュメントを参考に、amplify-iosライブラリのの初期化を行ってください。
 https://docs.amplify.aws/lib/restapi/getting-started/q/platform/ios/
 
 ### 3. Edit amplifyconfiguration.json
 
-Edit ${FOO_VAR} placeholders.
+提供された情報をもとに、`amplifyconfiguration.json`を編集してください。
 
 ### 4. Edit username and password
 
-Auto sign in when launch this iOS app.
+以下のように、このサンプルでは起動時にsign inを自動で行うようにしています。
+この箇所を提供されたusername, passwordを使用するようにしてください。
 
 https://github.com/makeOurCity/ios-sample-app/blob/main/AmplifyAuthSample/AmplifyAuthSample.swift#L39
 
 # Sending data
+
+以下のようにデータを送ることができます。
 
 https://github.com/makeOurCity/ios-sample-app/blob/main/AmplifyAuthSample/ContentView.swift#L17
