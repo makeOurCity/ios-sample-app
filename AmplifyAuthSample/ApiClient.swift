@@ -34,7 +34,7 @@ struct EntityData: Codable {
 open class ApiClient: NSObject {
     
     private static let apiName: String = "orion"
-    private static let serviceName: String = "Shizuoka_University"
+    private static let serviceName: String = "shizuoka_university"
     private static let typeName: String = "BeaconData"
     
     public static func postData(deviceId: String, time: Date, minorBeaconId: String, majorBeaconId: String, rssi: Double) throws {
