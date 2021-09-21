@@ -39,7 +39,7 @@
             "awsAPIPlugin": {
                 "orion": {
                     "endpointType": "REST",
-                    "endpoint": "https://d.makeour.city/orion",
+                    "endpoint": "${ORION_ENDPOINT}",
                     "region": "ap-northeast-1",
                     "authorizationType": "AMAZON_COGNITO_USER_POOLS"
                 }

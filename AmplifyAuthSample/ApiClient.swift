@@ -106,6 +106,7 @@ open class ApiClient: NSObject {
                     }
                 } catch {
                     print("Fetch auth session failed with error - \(error)")
+                    signIn(username: username, password: password)
                 }
             case .failure:
                 signIn(username: username, password: password)
