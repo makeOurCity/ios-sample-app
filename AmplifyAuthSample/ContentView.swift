@@ -14,7 +14,10 @@ struct ContentView: View {
         
         Button(action: {
             do {
-                try ApiClient.postData(deviceId: "sample001", time: Date(), minorBeaconId: "001", majorBeaconId: "002", rssi: 0.111)
+                try ApiClient.postDataBatch(deviceId: "sample001", data: [
+                    BatchEntity(time: Date(), minorBeaconId: "001", majorBeaconId: "002", rssi: 0.111),
+                    BatchEntity(time: Date(), minorBeaconId: "001", majorBeaconId: "002", rssi: 0.112),
+                ])
             } catch {
                 print("got error: \(error)")
             }

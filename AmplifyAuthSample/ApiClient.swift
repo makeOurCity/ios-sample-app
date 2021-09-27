@@ -19,16 +19,28 @@ struct EntityData: Codable {
     var minorBeaconId: StringAttribute
     var majorBeaconId: StringAttribute
     var rssi: StringAttribute
-    
-    struct StringAttribute: Codable {
-        var type: String = "Text"
-        var value: String
-    }
+}
 
-    struct DatetimeAttribute: Codable {
-        var type: String = "DateTime"
-        var value: Date
-    }
+public struct BatchEntity: Codable {
+    var time: Date
+    var minorBeaconId: String
+    var majorBeaconId: String
+    var rssi: Double
+}
+
+struct BatchData: Codable {
+    var actionType: String
+    var entities: [EntityData]
+}
+
+struct StringAttribute: Codable {
+    var type: String = "Text"
+    var value: String
+}
+
+struct DatetimeAttribute: Codable {
+    var type: String = "DateTime"
+    var value: Date
 }
 
 open class ApiClient: NSObject {
@@ -36,6 +48,50 @@ open class ApiClient: NSObject {
     private static let apiName: String = "orion"
     private static let serviceName: String = "shizuoka_university"
     private static let typeName: String = "BeaconData"
+    
+    public static func postDataBatch(deviceId: String, data: [BatchEntity]) throws {
+        let headers = [
+            "Fiware-Service": ApiClient.serviceName,
+            "Fiware-Service-Path": "/beacon/\(deviceId)",
+            "Content-Type": "application/json"
+        ]
+        
+        
+        var entities: [EntityData] = []
+        for d in data {
+            let e = EntityData(
+                type: ApiClient.typeName,
+                id: "urn:ngsi-ld:\(ApiClient.typeName):\(UUID().uuidString)",
+                datetime: DatetimeAttribute(value: d.time),
+                minorBeaconId: StringAttribute(value: d.minorBeaconId),
+                majorBeaconId: StringAttribute(value: d.majorBeaconId),
+                rssi: StringAttribute(value: "\(d.rssi)")
+                
+            )
+            entities.append(e)
+        }
+        
+        let body: BatchData = BatchData(
+            actionType: "append_strict", entities: entities
+        )
+        
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        let d = try encoder.encode(body)
+        let request = RESTRequest(apiName: ApiClient.apiName, path: "/v2/op/update", headers: headers, body: Data(d))
+        
+        Amplify.API.post(request: request) { result in
+            switch result {
+            case .success(let data):
+                let str = String(decoding: data, as: UTF8.self)
+                print("Success \(str)")
+            case .failure(let apiError):
+                
+                print("Failed", apiError)
+            }
+        }
+        
+    }
     
     public static func postData(deviceId: String, time: Date, minorBeaconId: String, majorBeaconId: String, rssi: Double) throws {
         let headers = [
@@ -46,11 +102,11 @@ open class ApiClient: NSObject {
         
         let body: EntityData = EntityData(
             type: ApiClient.typeName,
-            id: "urn:ngsi-ld:\(typeName):\(UUID().uuidString)",
-            datetime: EntityData.DatetimeAttribute(value: time),
-            minorBeaconId: EntityData.StringAttribute(value: minorBeaconId),
-            majorBeaconId: EntityData.StringAttribute(value: majorBeaconId),
-            rssi: EntityData.StringAttribute(value: "\(rssi)")
+            id: "urn:ngsi-ld:\(ApiClient.typeName):\(UUID().uuidString)",
+            datetime: DatetimeAttribute(value: time),
+            minorBeaconId: StringAttribute(value: minorBeaconId),
+            majorBeaconId: StringAttribute(value: majorBeaconId),
+            rssi: StringAttribute(value: "\(rssi)")
         )
         
         
